@@ -275,15 +275,7 @@ dl dd {
 
 a, a:visited {
 	text-decoration: none;
-	color: #82204A;
-}
-
-a:hover {
-	border-bottom: 1px solid;
-}
-
-a:focus {
-	outline: thin dotted;
+	color: #D6D1CD;
 }
 
 /* Better CSS outline suppression: people.opera.com/patrickl/experiments/keyboard/test */
@@ -449,7 +441,7 @@ nav .icon {
 	/* Wide mobile (480px+) styles go here */
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
 	nav a {
 		display: none;
 	}
@@ -460,11 +452,17 @@ nav .icon {
 
 	nav.responsive {
 		position: relative;
+		width: 100%;
+		height: auto;
+	}
+	nav.responsive a {
+		display: block;
+		float:none;
 	}
 	nav.responsive .icon {
 		position: absolute;
-		display: block;
-		text-align: center;
+		right: 10%;
+		top: 20px;
 	}
 }
 
