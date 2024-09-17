@@ -57,7 +57,7 @@ html::before {
 	z-index: -1;  
 	background-size: 15% 100%;  
 	background-repeat: repeat-x;  
-	background-image: linear-gradient(to right, rgba(214, 209, 205, 0.5) 0.5px, transparent 0.1px);  
+	background-image: linear-gradient(to right, rgba(214, 209, 205, 0.2) 0.5px, transparent 0.1px);  
 	pointer-events: none;
 }
 
@@ -408,11 +408,30 @@ sub {
 /* Primary styles
 ---------------------------------------- */
 
+section, header {
+	margin-left: 10%;
+	margin-right: 10%;
+	display: flex;
+}
 
+nav {
+	width: 80%;
+	float: right;
+	margin-right: 10%;
+	display: flex;
+	justify-content: space-evenly;
+}
 
+nav a {
+	width: fit-content;
+	font-family: 'Gotham Bold';
+	font-size: 1em;
+	color: #FBFBFB;
+}
 
-
-
+.logo {
+	max-width: 200px;
+}
 
 
 
