@@ -521,12 +521,12 @@ nav {
 	background-color: rgba(85,140,140, 0.4);
 	z-index: 999;
   }
-html:has(a:hover) #mouse-outline {
-	width: 30px;
-	height: 30px;
+html:has(li:hover, a:visited) #mouse-outline {
+	width: 30px!important;
+	height: 30px!important;
 	transition: 0.3s;
   }
-html:has(a:focus) #mouse-outline {
+html:has(li:focus) #mouse-outline {
 	width: 33px;
 	height: 33px;
 	transition: 0.3s;
