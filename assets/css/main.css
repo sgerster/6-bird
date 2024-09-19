@@ -107,7 +107,6 @@ p, blockquote, q, pre, address, hr, code, samp, dl, ol, ul, form, table, fieldse
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Gotham Bold', sans-serif;
 	font-size: 1em;
 }
 
@@ -115,7 +114,8 @@ h1 {
 	font-size: 4.25em; /* 68px */
 	line-height: 1.1471em;
 	margin: 0 0 0.3824em;
-	color: #FBFBFB;
+	color: #D6D1CD;
+	font-family: 'Gotham Bold', sans-serif;
 }
 
 h2 {
@@ -128,6 +128,8 @@ h3 {
 	font-size: 1.625em; /* 26px */
 	line-height: 1em;
 	margin: 0 0 1em;
+	color: #D6D1CD;
+	font-family: 'Gotham Book', sans-serif;
 }
 
 small {
@@ -396,20 +398,31 @@ section, header {
 	margin-left: 3%;
 	margin-right: 3%;
 	display: flex;
+	perspective: 1px;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 section {
 	height: 100vh;
 	align-items: center;
 }
 
-.hero img {
-	width: 40vw;
+.circle img {
+	width: 30vw;
 	height: auto;
+}
+.para-wrapper {
+	position: absolute;
+}
+.speed-1 {
+	transform: translateZ(-2px) scale(2);
 }
 .circle {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-position: center center;
+	background: transparent;
 }
 .circle::before {
 	content: '';
@@ -487,8 +500,17 @@ nav {
 	width: 100px;
 	max-width: 100px;
 }
-.brittany {
+span.brittany {
 	font-family: 'Brittany';
+	font-weight: normal;
+	font-size: 160%;
+	color: #FBFBFB;
+	line-height: 0.9em;
+}
+.spacer {
+	content: '';
+	height: 5vh;
+	width: 100%;
 }
 
 /* Media queries

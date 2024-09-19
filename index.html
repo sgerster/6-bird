@@ -48,31 +48,15 @@
 		</header>
 
 		<section class="hero">
+			<div>
 				<h1>Socials that <br /><span class="brittany">Soar</span></h1>
-				<h3>Boost brand engagement <br />and spend more time 
+				<div class="spacer"></div>
+				<h3>Boost brand engagement <br />and spend more time<br /> 
 				<span class="brittany">rocking your biz!</span></h3>
-				<div class="circle"><img src="assets/img/coffee-boss-mockup.png" /></div>
+			</div>
+			<div class="circle parallax-2"><img class="parallax-1" src="assets/img/coffee-boss-mockup.png" /></div>
 		</section>
 
-		<script>
-			var burger = document.querySelector("#burger");
-			var nav = document.querySelector("#mainNav");
-			var navLinks = document.querySelectorAll("#mainNav a");
-
-			Array.from(navLinks).forEach((a) => 
-				a.addEventListener("click", () => {
-					if (burger.classList.contains("toggle")) {
-						burger.classList.remove("toggle");
-					}
-					if (nav.classList.contains("nav-active")) {
-						nav.classList.remove("nav-active");
-					}
-				}));
-
-			burger.addEventListener("click", () => {
-			 	nav.classList.toggle("nav-active");
-				burger.classList.toggle("toggle");
-			});
-		</script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>
