@@ -27,3 +27,16 @@ window.addEventListener("scroll", function() {
         item.style.transform = `translateY(${distance * 0.5}px)`;
     })
 })
+
+window.addEventListener("mousemove", function(e) {
+    var xPos = e.pageX;
+    var yPos = e.pageY;
+    document.getElementById("mouse").animate({
+        top: `${yPos}px`,
+        left: `${xPos}px`
+    }, {duration: 0, fill:"forwards"}); 
+    document.getElementById("mouse-outline").animate({
+        top: `${yPos}px`,
+        left: `${xPos}px`
+    }, {duration: 1000, fill:"forwards"});
+})
