@@ -597,6 +597,28 @@ span.brittany {
 	/* Desktops (1024px+) styles go here */
 }
 
+/* Links Page
+---------------------------------------- */
+.links-block {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 20vh;
+	width: 100vw;
+}
+.links-button {
+	width: 100%;
+	color: #558C8C;
+	background: #D6D1CD;
+	font-family: 'Gotham Bold';
+	font-size: 1.125em;
+	text-transform: uppercase;
+	border-radius: 10px;
+	padding: 15px 25px ;
+}
+
+
 /* Print styles
 ---------------------------------------- */
 
