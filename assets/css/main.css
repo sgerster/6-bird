@@ -604,8 +604,11 @@ span.brittany {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	height: 20vh;
+	height: auto;
 	width: 100vw;
+	background-color: #D6D1CD66;
+	border-radius: 10px;
+	padding: 25px;
 }
 .links-button {
 	width: 100%;
@@ -615,7 +618,22 @@ span.brittany {
 	font-size: 1.125em;
 	text-transform: uppercase;
 	border-radius: 10px;
-	padding: 15px 25px ;
+	padding: 15px 25px;
+}
+.links-content p {
+	color: #D6D1CD;
+}
+.links-content {
+	width: 60%;
+}
+.links-title {
+	font-family: 'Gotham Bold';
+	font-size: 1.12em;
+	color:#FBFBFB;
+	text-transform: uppercase;
+}
+.links-image {
+	width: 40%;
 }
 
 
