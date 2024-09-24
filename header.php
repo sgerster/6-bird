@@ -29,3 +29,16 @@
 	</head>
 	<body>
 		<div id="mouse"></div><div id="mouse-outline"></div>
+		<header>
+			<div class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/6bird-stacked-rev.svg" /></div>
+			<nav>
+				<div id="burger">
+					<div id="bar1"></div>
+					<div id="bar2"></div>
+					<div id="bar3"></div>
+				</div>
+				<div id="mainNav">
+				<?php wp_nav_menu( array( 'header-menu' => 'header-menu' ) ); ?>
+				</div>
+			</nav>
+		</header>
