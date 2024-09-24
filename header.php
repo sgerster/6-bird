@@ -16,7 +16,7 @@
 		<!-- Don't forget to update the bookmark icons (favicon.ico and apple-touch-icons) in the root: http://mathiasbynens.be/notes/touch-icons -->
 
 		<!-- CSS -->
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" type="text/css" media="all" />
 
 		<!-- JavaScript -->
 		<!--[if IE]><![endif]-->
@@ -25,38 +25,7 @@
 		<![endif]-->
 		<script src="assets/js/respond.min.js"></script>
 		<script src="assets/js/main.js"></script>
+        <?php wp_head();?>
 	</head>
 	<body>
 		<div id="mouse"></div><div id="mouse-outline"></div>
-	<div class="header-ticker">Grab your Insta Guides HERE</div>
-		<header>
-			<div class="logo" href="6birdsocial.com"><img src="assets/img/6bird-stacked-rev.svg" /></div>
-			<nav>
-				<div id="burger">
-					<div id="bar1"></div>
-					<div id="bar2"></div>
-					<div id="bar3"></div>
-				</div>
-				<div id="mainNav">
-					<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="templates.html">Templates</a></li>
-					<li><a href="strategy.html">Strategy</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</div>
-			</nav>
-		</header>
-
-		<section class="hero">
-			<div>
-				<h1>Socials that <br /><span class="brittany">Soar</span></h1>
-				<div class="spacer"></div>
-				<h3>Boost brand engagement <br />and spend more time<br /> 
-				<span class="brittany">rocking your biz!</span></h3>
-			</div>
-			<div class="circle parallax-2"><img class="parallax-1" src="assets/img/coffee-boss-mockup.png" /></div>
-		</section>
-	</body>
-</html>
