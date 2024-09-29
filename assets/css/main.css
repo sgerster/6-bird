@@ -592,10 +592,14 @@ span.brittany {
 
 	#mainNav ul {
 		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 		margin: 15px 0;
+		text-align: center;
+	}
+	#mainNav ul li a {
+		width: 100%;
+		display: block;
+		height: auto;
+		padding: 0 15px;
 	}
 	.half {
 		width: 100%;
