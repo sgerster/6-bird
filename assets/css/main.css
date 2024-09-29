@@ -521,7 +521,7 @@ nav {
 	background-color: rgba(85,140,140, 0.4);
 	z-index: 999;
   }
-html:has(li:hover, a:visited) #mouse-outline {
+html:has(li:hover, a:visited, #burger div:hover) #mouse-outline {
 	width: 30px!important;
 	height: 30px!important;
 	transition: 0.3s;
@@ -571,13 +571,15 @@ span.brittany {
 	#burger {
 		display: block;
 	}
-
+	#burger div:hover {
+		opacity: 0.8;
+	  }
 	#mainNav {
 		position: absolute;
 		top: 0;
 		right: 0;
-		width: 100%;
-		height: 100%;
+		width: 100vw;
+		height: 100vh;
 		background-color: #1C2321;
 		transform: translateX(110%);
 		transition: 0.5s;
@@ -590,6 +592,9 @@ span.brittany {
 		flex-direction: column;
 		align-items: center;
 		margin: 15px 0;
+	}
+	.half {
+		width: 100%;
 	}
 }
 
