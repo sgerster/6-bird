@@ -406,7 +406,9 @@ section {
 	height: 100vh;
 	align-items: center;
 }
-
+.half {
+	flex-basis: 100%;
+}
 .circle img {
 	width: 30vw;
 	height: auto;
