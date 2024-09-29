@@ -19,7 +19,6 @@ burger.addEventListener("click", () => {
 
 window.addEventListener("scroll", function() {
     const distance = window.scrollY;
-    document.querySelector("header").style.transform = `translateY(${distance * 1}px)`;
     document.querySelectorAll(".parallax-1").forEach(item => {
         item.style.transform = `translateY(${distance * 0.2}px)`;
     })
