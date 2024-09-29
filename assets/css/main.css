@@ -395,11 +395,9 @@ sub {
 ---------------------------------------- */
 
 header {
-	padding-left: 3%;
-	padding-right: 3%;
+	padding: 3%;
 	display: flex;
 	perspective: 1px;
-	position: relative;
 	z-index: 900;
 }
 section {
@@ -568,6 +566,9 @@ span.brittany {
 	html::before {
 	background-size: calc(100%/5), 100%; 
 	}
+	header {
+		overflow-x: hidden;
+	}
 	#burger {
 		display: block;
 	}
@@ -584,7 +585,7 @@ span.brittany {
 		width: 100vw;
 		height: 100vh;
 		background-color: #1C2321;
-		transform: translateX(110%);
+		transform: translateX(100%);
 		transition: 0.5s;
 		display: block;
 	}
