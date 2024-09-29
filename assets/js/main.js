@@ -1,5 +1,5 @@
 var burger = document.querySelector("#burger");
-var nav = document.querySelector("#mainNav");
+var nav = document.querySelector("nav");
 var navLinks = document.querySelectorAll("#mainNav a");
 
 Array.from(navLinks).forEach((a) =>
@@ -7,13 +7,13 @@ Array.from(navLinks).forEach((a) =>
         if (burger.classList.contains("toggle")) {
             burger.classList.remove("toggle");
         }
-        if (nav.classList.contains("nav-active")) {
-            nav.classList.remove("nav-active");
+        if (nav.classList.contains("open-nav")) {
+            nav.classList.remove("open-nav");
         }
     }));
 
 burger.addEventListener("click", () => {
-    nav.classList.toggle("nav-active");
+    nav.classList.toggle("open-nav");
     burger.classList.toggle("toggle");
 });
 
