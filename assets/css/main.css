@@ -394,15 +394,19 @@ sub {
 /* Primary styles
 ---------------------------------------- */
 
-section, header {
+header {
+	padding-left: 3%;
+	padding-right: 3%;
+	display: flex;
+	perspective: 1px;
+	position: relative;
+	z-index: 900;
+}
+section {
 	margin-left: 3%;
 	margin-right: 3%;
 	display: flex;
 	perspective: 1px;
-	overflow-x: hidden;
-	overflow-y: auto;
-}
-section {
 	height: 100vh;
 	align-items: center;
 }
@@ -415,9 +419,6 @@ section {
 }
 .para-wrapper {
 	position: absolute;
-}
-.speed-1 {
-	transform: translateZ(-2px) scale(2);
 }
 .circle {
 	display: flex;
@@ -436,7 +437,6 @@ section {
 	display: block;
 	z-index: -1;
 }
-
 nav {
 	width: 80%;
 }
@@ -574,6 +574,9 @@ span.brittany {
 	#burger div:hover {
 		opacity: 0.8;
 	  }
+	nav {
+		width:100%;
+	}
 	#mainNav {
 		position: absolute;
 		top: 0;
